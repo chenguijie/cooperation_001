@@ -1,0 +1,384 @@
+1.  登录验证接口
+
+
+1.1  登录验证后台接口地址
+      /rng/Login/Verification
+
+      登录验证需提供的参数
+      Account  账号     
+      Password  密码
+
+
+
+2.  所有数据初始加载接口
+
+
+2.1  加载用户表所有数据后台接口
+      /rng/UserTable/Load
+
+       加载用户表所有数据需提供的参数
+       无
+
+
+
+2.2  加载订单表所有数据后台接口
+      /rng/Orderform/Load
+
+       加载订单表所有数据需提供的参数
+       无
+
+
+
+2.3  加载用户收货地址表所有数据后台接口
+      /rng/Userreceivingaddresstable/Load
+
+       加载用户收货地址表所有数据需提供的参数
+       无
+
+
+
+2.4  加载订单明细表所有数据后台接口
+      /rng/OrderDetails/Load
+
+       加载订单明细表所有数据需提供的参数
+       无
+
+
+
+2.5  加载商品表所有数据后台接口
+      /rng/Commoditylist/Load
+
+       加载商品表所有数据需提供的参数
+       无
+
+
+
+2.6  加载类别表所有数据后台接口
+      /rng/Classtable/Load
+
+       加载类别表所有数据需提供的参数
+       无
+
+
+
+2.7  加载商家表所有数据后台接口
+      /rng/Merchantlist/Load
+
+       加载商家表所有数据需提供的参数
+       无
+
+
+
+2.8  加载骑手表所有数据后台接口
+      /rng/Ridingawatch/Load
+
+       加载骑手表所有数据需提供的参数
+       无
+     
+
+
+
+3.  查询指定数据接口
+
+
+3.1  查询用户表指定数据后台接口地址
+      /rng/UserTable/Search
+
+      查询用户表需提供的参数
+      Id  用户id
+
+
+
+3.2  查询订单表指定数据后台接口地址
+      /rng/Orderform/Search
+
+      查询订单表需提供的参数
+      Id  订单id
+
+
+
+3.3  查询用户收货地址表指定数据后台接口地址
+      /rng/Userreceivingaddresstable/Search
+
+      查询收货地址表需提供的参数
+      Id  用户id
+
+
+
+3.4  查询订单明细表指定数据后台接口地址
+      /rng/OrderDetails/Search
+
+      查询订单明细表需提供的参数
+      Id  订单id
+
+
+
+3.5  查询商品表指定数据后台接口地址
+      /rng/Commoditylist/Search
+
+      查询商品表需提供的参数
+      Id  商品id
+
+
+
+3.6  查询类别表指定数据后台接口地址
+      /rng/Classtable/Search
+
+      查询类别表需提供的参数
+      Id  类别id
+
+
+
+3.7  查询商家表指定数据后台接口地址
+      /rng/Merchantlist/Search
+
+      查询商家表需提供的参数
+      Id  商家id
+
+
+
+3.8  查询骑手表指定数据后台接口地址
+      /rng/Ridingawatch/Search
+
+      查询骑手表需提供的参数
+      Id  骑手id
+
+
+
+4.  表格添加数据后台接口
+
+
+
+4.1  用户表添加数据后台接口地址
+      /rng/UserTable/Add
+
+       用户表添加数据需提供的参数
+       accountnumber 账号                                                                                                     
+       password 密码                                                                                                               
+       username 用户名                                                                                                          
+       userhead 用户头像 
+
+
+
+4.2  订单表添加数据后台接口地址
+      /rng/Orderform/Add
+
+       订单表添加数据需提供的参数    
+       userId 用户Id                                                                                                                 
+       riderId 骑手Id                                                                  
+       ordertime 下单时间                                                                                                      
+       deliverytime 送出时间                                                                                                    
+       servicetime 送达时间                                                                                                     
+       nameofshipper 货主名称                                                                                             
+       contactnumber 联系电话                                                                                               
+       receivingaddress 收货地址                                                                                             
+       longitudeofreceivingaddress 收货地址经度                                                                 
+       receivingaddresslatitude 收货地址纬度                                                                         
+       redenvelopededuction 红包抵扣                                                                                  
+       totalorderconsumption 订单消费合计
+
+
+
+4.3  用户收货地址表添加数据后台接口地址
+      /rng/Userreceivingaddresstable/Add
+
+       用户收货地址表添加数据需提供的参数
+       userId 用户Id                                                                                                                
+       nameofshipper 货主名称                                                                                              
+       receivingaddress 收货地址                                                                                             
+       longitudeofreceivingaddress 收货地址经度                                                                   
+       receivingaddresslatitude 收货地址纬度 
+
+
+
+4.4  订单明细表添加数据后台接口地址
+      /rng/OrderDetails/Add
+
+       订单明细表添加数据需提供的参数                          
+       orderId 订单Id                                                                                                                 
+       commodityId 商品Id                                                        
+       itempricing 商品单价                                                                                                         
+       quantityofcommodities 商品数量                                                                                   
+       merchandisediscount 商品折扣
+
+
+
+4.5  商品表添加数据后台接口地址
+      /rng/Commoditylist/Add
+
+       商品表添加数据需提供的参数                        
+       merchantId 商家Id                                                                 
+       categoryId 类别Id                                                                   
+       tradename 商品名称                                                                                                           
+       commoditypictures 商品图片                                                                                              
+       commoditydescription 商品描述                                                                                           
+       itempricing 商品单价                                                                                                           
+       merchandisediscount 商品折扣                                                                                             
+       commodityinventory 商品库存                                                                                          
+       orderquantity 商品订购量 
+
+
+
+4.6  类别表添加数据后台接口地址
+      /rng/Classtable/Add
+
+       类别表添加数据需提供的参数
+       categoryname 类别名称                                                                                                          
+       classdescription 类别描述 
+
+
+
+4.7  商家表添加数据后台接口地址
+      /rng/Merchantlist/Add
+
+       商家表添加数据需提供的参数 
+       nameofmerchant 商家名称                                                                                                    
+       businesscontactnumber 商家联系电话                                                                                     
+       shopname 店铺名称                                                                                                                  
+       shopaddress 店铺地址                                                                                                                
+       longitudeofstoreaddress 店铺地址经度                                                                                    
+       storeaddresslatitude 店铺地址纬度
+
+
+
+4.8  骑手表添加数据后台接口地址
+      /rng/Ridingawatch/Add
+
+       骑手表添加数据需提供的参数 
+       nameofrider 骑手姓名                                                                                                                  
+       dateofbirth 出生日期                                                                                                                   
+       dateofentry 入职日期                                                                                                                   
+       rideraddress 骑手地址                                                                                                                   
+       ridercontactnumber 骑手联系电话                                                                                                 
+       photosofriders 骑手照片                                                                                                                 
+       riderIdnumber 骑手身份证号码                                                                                                     
+       riderincome 骑手收入                
+
+
+
+5.  表格修改数据后台接口
+
+
+5.1 用户表修改数据后台接口地址
+     /rng/UserTable/Reset
+
+      用户表修改数据需提供的参数
+      Id 用户Id
+      Accountnumber 账号 
+      Password 密码
+      UserName 用户名
+      Userhead 用户头像
+
+
+5.2  订单表修改数据后台接口地址
+      /rng/Orderform/Reset
+
+      订单表修改数据需提供的参数
+      Id 订单Id
+      UserId 用户Id
+      RiderId 骑手Id
+      Ordertime 下单时间                                                                                                       
+      Deliverytime 送出时间                                                                                                    
+      Servicetime 送达时间                                                                                                     
+      Nameofshipper 货主名称                                                                                             
+      Contactnumber 联系电话                                                                                               
+      Receivingaddress 收货地址                                                                                            
+      Longitudeofreceivingaddress 收货地址经度                                                                  
+      Receivingaddresslatitude 收货地址纬度                                                                         
+      Redenvelopededuction 红包抵扣                                                                                  
+      Totalorderconsumption 订单消费合计 
+
+
+5.3  用户收货地址表修改数据后台接口地址
+      /rng/Userreceivingaddresstable/Reset
+
+      用户收货地址表修改数据需提供的参数
+      Id                                                                                                                                
+      UserId 用户Id                                                                                                                 
+      Nameofshipper 货主名称                                                                                              
+      Receivingaddress 收货地址                                                                                           
+      Longitudeofreceivingaddress 收货地址经度                                                                    
+      Receivingaddresslatitude 收货地址纬度 
+
+
+5.4   订单明细表修改数据后台接口地址
+       /rng/OrderDetails/Reset
+
+        订单明细表修改数据需提供的参数
+        Id                                                                                                                                    
+        OrderId 订单Id                                                                                                                 
+        CommodityId 商品Id                                                         
+        itempricing 商品单价                                                                                                        
+        Quantityofcommodities 商品数量                                                                                    
+        Merchandisediscount 商品折扣 
+
+
+5.5   商品表修改数据后台接口地址
+       /rng/Commoditylist/Reset
+  
+        商品表修改数据需提供的参数
+        Id 商品Id                                                                                                                           
+        MerchantId 商家Id                                                               
+        categoryId 类别Id                                                                  
+        Tradename 商品名称                                                                                                           
+        Commoditypictures 商品图片                                                                                                
+        CommodityDescription 商品描述                                                                                           
+        itempricing 商品单价                                                                                                            
+        Merchandisediscount 商品折扣                                                                                             
+        Commodityinventory 商品库存                                                                                              
+        Orderquantity 商品订购量
+
+
+5.6  类别表修改数据后台接口地址
+      /rng/Classtable/Reset
+
+      类别表修改数据需提供的参数              
+      Id 类别Id                                                                                                                                
+      Categoryname 类别名称                                                                                                           
+      Classdescription 类别描述 
+
+
+5.7  商家表修改数据后台接口地址
+      /rng/Merchantlist/Reset
+
+      商家表修改数据需提供的参数
+      Id 商家Id                                                                                                                                  
+      Nameofmerchant 商家名称                                                                                                    
+      Businesscontactnumber 商家联系电话                                                                                       
+      Shopname 店铺名称                                                                                                                
+      Shopaddress 店铺地址                                                                                                                
+      Longitudeofstoreaddress 店铺地址经度                                                                                     
+      Storeaddresslatitude 店铺地址纬度 
+
+
+5.8  骑手表修改数据后台接口地址
+      /rng/Ridingawatch/Reset
+
+      骑手表修改数据需提供的参数
+      Id 骑手Id                                                                                                                                       约束条件:PK NN AI
+      Nameofrider 骑手姓名                                                                                                                  约束条件:NN
+      Dateofbirth 出生日期                                                                                                                    约束条件:NN
+      Dateofentry 入职日期                                                                                                                    约束条件:NN
+      Rideraddress 骑手地址                                                                                                                    约束条件:NN
+      Ridercontact number 骑手联系电话                                                                                                 约束条件:NN UQ
+      Photosofriders 骑手照片                                                                                                                 约束条件:
+      RiderIDnumber 骑手身份证号码                                                                                                      约束条件:NN UQ
+      Riderincome 骑手收入                      
+
+
+
+
+
+                                         
+
+
+
+
+
+
+
+
+
+
+
+

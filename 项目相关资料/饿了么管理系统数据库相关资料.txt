@@ -1,0 +1,123 @@
+数据库表格中的列名称中英对照及约束条件
+
+
+
+UserTable 用户表        
+Id 用户Id(外键,和订单表的用户Id相关联,同时和用户收货地址表的用户Id相关联.)                     约束条件:PK NN AI
+Account number 账号                                                                                                     约束条件:NN UQ
+Password 密码                                                                                                                约束条件:NN
+UserName 用户名                                                                                                           约束条件:NN
+User head 用户头像                                                                                                         约束条件:
+
+
+
+Order form 订单表
+Id 订单Id(外键,和订单明细表的订单Id相关联.)                                                                     约束条件:PK NN AI
+UserId 用户Id                                                                                                                 约束条件:NN
+RiderId 骑手Id(外键,和骑手表的骑手Id相关联.)                                                                   约束条件:NN
+Order time 下单时间                                                                                                       约束条件:NN
+Delivery time 送出时间                                                                                                    约束条件:NN
+Service time 送达时间                                                                                                     约束条件:NN
+Name of shipper 货主名称                                                                                              约束条件:NN
+Contact number 联系电话                                                                                               约束条件:NN
+Receiving address 收货地址                                                                                             约束条件:NN
+Longitude of receiving address 收货地址经度                                                                  约束条件:NN
+Receiving address latitude 收货地址纬度                                                                         约束条件:NN
+Red envelope deduction 红包抵扣                                                                                  约束条件:
+Total order consumption 订单消费合计                                                                           约束条件:NN
+
+
+
+User receiving address table 用户收货地址表
+Id                                                                                                                                  约束条件:PK NN AI
+UserId 用户Id                                                                                                                 约束条件:NN
+Name of shipper 货主名称                                                                                              约束条件:NN
+Receiving address 收货地址                                                                                             约束条件:NN
+Longitude of receiving address 收货地址经度                                                                    约束条件:NN
+Receiving address latitude 收货地址纬度                                                                           约束条件:NN
+
+
+
+Order Details 订单明细表
+Id                                                                                                                                     约束条件:PK NN AI
+OrderId 订单Id                                                                                                                  约束条件:NN
+Commodity Id 商品Id(外键,跟商品表的商品Id相关联.)                                                           约束条件:NN
+item pricing 商品单价                                                                                                         约束条件:NN
+Quantity of commodities 商品数量                                                                                     约束条件:NN
+Merchandise discount 商品折扣                                                                                          约束条件:NN
+
+
+
+Commodity list 商品表
+Id 商品Id                                                                                                                             约束条件:PK NN AI
+Merchant Id 商家Id(外键,与商家表的商家Id相关联.)                                                                 约束条件:NN
+categoryId 类别Id(外键,跟类别表的类别Id相关联.)                                                                    约束条件:NN
+Trade name 商品名称                                                                                                            约束条件:NN
+Commodity pictures 商品图片                                                                                                约束条件:
+Commodity Description 商品描述                                                                                           约束条件:
+item pricing 商品单价                                                                                                            约束条件:NN
+Merchandise discount 商品折扣                                                                                             约束条件:NN
+Commodity inventory 商品库存                                                                                              约束条件:NN
+Order quantity 商品订购量                                                                                                      约束条件:NN
+
+
+
+Class table 类别表
+Id 类别Id                                                                                                                                  约束条件:PK NN AI
+Category name 类别名称                                                                                                           约束条件:NN
+Class description 类别描述                                                                                                          约束条件:NN
+
+
+
+Merchant list 商家表
+Id 商家Id                                                                                                                                   约束条件:PK NN AI
+Name of merchant 商家名称                                                                                                      约束条件:NN
+Business contact number 商家联系电话                                                                                       约束条件:NN UQ
+Shop name 店铺名称                                                                                                                   约束条件:NN
+Shop address 店铺地址                                                                                                                约束条件:NN
+Longitude of store address 店铺地址经度                                                                                     约束条件:NN
+Store address latitude 店铺地址纬度                                                                                              约束条件:NN
+
+
+
+Riding a watch 骑手表
+Id 骑手Id                                                                                                                                       约束条件:PK NN AI
+Name of rider 骑手姓名                                                                                                                  约束条件:NN
+Date of birth 出生日期                                                                                                                    约束条件:NN
+Date of entry 入职日期                                                                                                                    约束条件:NN
+Rider address 骑手地址                                                                                                                    约束条件:NN
+Rider contact number 骑手联系电话                                                                                                 约束条件:NN UQ
+Photos of riders 骑手照片                                                                                                                 约束条件:
+Rider ID number 骑手身份证号码                                                                                                      约束条件:NN UQ
+Rider income 骑手收入                                                                                                                     约束条件:NN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
