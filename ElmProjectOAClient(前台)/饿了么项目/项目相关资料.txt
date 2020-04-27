@@ -1,0 +1,121 @@
+数据库表格中的列名称中英对照
+
+
+
+UserTable 用户表
+Account number 账号
+Password 密码
+UserName 用户名
+UserId 用户Id(外键,和订单表的用户Id相关联,同时和用户收货地址表的用户Id相关联.)
+User head 用户头像
+
+
+
+Order form 订单表
+OrderId 订单Id(外键,和订单明细表的订单Id相关联.)
+UserId 用户Id
+RiderId 骑手Id(外键,和骑手表的骑手Id相关联.)
+Order time 下单时间
+Delivery time 送出时间
+Service time 送达时间
+Name of shipper 货主名称
+Contact number 联系电话
+Receiving address 收货地址
+Longitude of receiving address 收货地址经度
+Receiving address latitude 收货地址纬度
+Red envelope deduction 红包抵扣
+Total order consumption 订单消费合计
+
+
+
+User receiving address table 用户收货地址表
+UserId 用户Id
+Name of shipper 货主名称
+Receiving address 收货地址
+Longitude of receiving address 收货地址经度
+Receiving address latitude 收货地址纬度
+
+
+
+Order Details 订单明细表
+OrderId 订单Id
+Commodity Id 商品Id(外键,跟商品表的商品Id相关联.)
+item pricing 商品单价
+Quantity of commodities 商品数量
+Merchandise discount 商品折扣
+
+
+
+Commodity list 商品表
+Merchant Id 商家Id(外键,与商家表的商家Id相关联.)
+Commodity Id 商品Id
+categoryId 类别Id(外键,跟类别表的类别Id相关联.)
+Trade name 商品名称
+Commodity pictures 商品图片
+Commodity Description 商品描述
+item pricing 商品单价
+Merchandise discount 商品折扣
+Commodity inventory 商品库存
+Order quantity 商品订购量
+
+
+
+Class table 类别表
+categoryId 类别Id
+Category name 类别名称
+Class description 类别描述
+
+
+
+Merchant list 商家表
+Merchant Id 商家Id
+Name of merchant 商家名称
+Business contact number 商家联系电话
+Shop name 店铺名称
+Shop address 店铺地址
+Longitude of store address 店铺地址经度
+Store address latitude 店铺地址纬度
+
+
+
+Riding a watch 骑手表
+RiderId 骑手Id
+Name of rider 骑手姓名
+Date of birth 出生日期
+Date of entry 入职日期
+Rider address 骑手地址
+Rider contact number 骑手联系电话
+Photos of riders 骑手照片
+Rider ID number 骑手身份证号码
+Rider income 骑手收入
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
